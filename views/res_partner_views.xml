@@ -12,15 +12,6 @@
                        widget="many2many_tags"
                        readonly="1"
                        help="Accounts where this partner is specifically assigned"/>
-                       
-                <!-- Action button to view assigned accounts -->
-                <div class="oe_right" invisible="not assigned_account_ids">
-                    <button name="action_view_assigned_accounts" 
-                            type="object" 
-                            string="View Assigned Accounts" 
-                            class="btn-secondary"
-                            icon="fa-list"/>
-                </div>
             </xpath>
         </field>
     </record>

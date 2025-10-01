@@ -38,14 +38,3 @@ class ResPartner(models.Model):
         # This method can be extended to add logging functionality
         # For now, we'll just pass
         pass
-
-    def action_view_assigned_accounts(self):
-        """Action to view accounts where this partner is assigned"""
-        return {
-            'name': _('Assigned Accounts'),
-            'type': 'ir.actions.act_window',
-            'res_model': 'account.account',
-            'view_mode': 'tree,form',
-            'domain': [('id', 'in', self.assigned_account_ids.ids)],
-            'context': {'create': False}
-        }
